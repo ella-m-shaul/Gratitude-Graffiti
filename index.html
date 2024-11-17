@@ -12,7 +12,10 @@
     <div class="flex flex-row items-center justify-center">
         <h1 class="text-white text-6xl font-extrabold pt-10 ">Gratitude Grafitti!</h1>
     </div>
-    <h2 class="text-slate-50 text-6xl font-light py-20 flex flex-row justify-center">Raps For Inspiration</h2>
+    <div class="place-self-center">
+        <h2 class="text-slate-50 text-6xl font-light py-20 flex flex-row justify-center">Raps For Inspiration</h2>
+    </div>
+
 
     <div class="flex flex-col items-center space-y-9">
         <video width="800" height="540" controls>
@@ -53,12 +56,15 @@
             <audio class="audio-player" id="audio-player-2" src="./img/RPReplay_Final1731869506.MOV"></audio>
 
         </div>
-        
+
     </div>
     <script>
         // First button functionality
         const playBtn1 = document.getElementById('play-btn-1');
         const audioPlayer1 = document.getElementById('audio-player-1');
+
+        // Set loop initially
+        audioPlayer1.loop = true;
 
         playBtn1.addEventListener('click', function () {
             if (audioPlayer1.paused) {
@@ -74,6 +80,9 @@
         const playBtn2 = document.getElementById('play-btn-2');
         const audioPlayer2 = document.getElementById('audio-player-2');
 
+        // Set loop initially
+        audioPlayer2.loop = true;
+
         playBtn2.addEventListener('click', function () {
             if (audioPlayer2.paused) {
                 audioPlayer2.play();
@@ -83,6 +92,7 @@
                 playBtn2.querySelector('path:nth-child(2)').setAttribute('d', 'M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445'); // Play icon
             }
         });
+
 
     </script>
 </body>
