@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ella's Code</title>
+    <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    <p>Hello world</p>
+
+<body class="bg-blue-950">
+    <div class="flex flex-row items-center justify-center">
+        <h1 class="text-white text-6xl font-extrabold pt-10 ">Gratitude Grafitti!</h1>
+    </div>
+    <h2 class="text-slate-50 text-6xl font-light p-20 place-self-center">Raps For Inspiration</h2>
+
+    <div class="flex flex-col items-center space-y-9">
+        <video width="800" height="540" controls>
+            <source src="./img/second.mp4" type="video/mp4">
+        </video>
+
+        <video width="800" height="540" controls>
+            <source src="./img/IMG_6258.mp4" type="video/mp4">
+        </video>
+
+        <video width="800" height="540" controls>
+            <source src="./img/IMG_1245 (1).mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="mt-[16vh]">
+        <div class="place-self-center text-6xl text-slate-200 pb-[10vh]">
+            <h2>Try it out for yourself!</h2>
+        </div>
+        <div class="flex flex-row items-center justify-evenly mb-48">
+            <!-- First play button and audio player -->
+            <svg id="play-btn-1" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                class="bi bi-play-circle w-36 h-36 hover:cursor-pointer" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path class="text-white"
+                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+            </svg>
+            <audio class="audio-player" id="audio-player-1" src="./img/T La Rock backing track.mp4"></audio>
+
+            <!-- Second play button and audio player -->
+            <svg id="play-btn-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                class="bi bi-play-circle w-36 h-36 hover:cursor-pointer" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path class="text-white"
+                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+            </svg>
+            <audio class="audio-player" id="audio-player-2" src="./img/RPReplay_Final1731869506.MOV"></audio>
+
+        </div>
+
+
+
+    </div>
+    <script>
+        // First button functionality
+        const playBtn1 = document.getElementById('play-btn-1');
+        const audioPlayer1 = document.getElementById('audio-player-1');
+
+        playBtn1.addEventListener('click', function () {
+            if (audioPlayer1.paused) {
+                audioPlayer1.play();
+                playBtn1.querySelector('path:nth-child(2)').setAttribute('d', 'M6 5.5l3.5 2.5-3.5 2.5V5.5z'); // Pause icon
+            } else {
+                audioPlayer1.pause();
+                playBtn1.querySelector('path:nth-child(2)').setAttribute('d', 'M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445'); // Play icon
+            }
+        });
+
+        // Second button functionality
+        const playBtn2 = document.getElementById('play-btn-2');
+        const audioPlayer2 = document.getElementById('audio-player-2');
+
+        playBtn2.addEventListener('click', function () {
+            if (audioPlayer2.paused) {
+                audioPlayer2.play();
+                playBtn2.querySelector('path:nth-child(2)').setAttribute('d', 'M6 5.5l3.5 2.5-3.5 2.5V5.5z'); // Pause icon
+            } else {
+                audioPlayer2.pause();
+                playBtn2.querySelector('path:nth-child(2)').setAttribute('d', 'M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445'); // Play icon
+            }
+        });
+
+    </script>
 </body>
+
 </html>
