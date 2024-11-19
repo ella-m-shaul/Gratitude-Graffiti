@@ -722,6 +722,11 @@ video {
   background-color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
 }
 
+.bg-orange-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -741,6 +746,36 @@ video {
 .from-blue-500 {
   --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red-900 {
+  --tw-gradient-from: #7f1d1d var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(127 29 29 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-orange-300 {
+  --tw-gradient-from: #fdba74 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(253 186 116 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-blue-400 {
+  --tw-gradient-from: #60a5fa var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(96 165 250 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-blue-800 {
+  --tw-gradient-from: #1e40af var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(30 64 175 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-blue-700 {
+  --tw-gradient-from: #1d4ed8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(29 78 216 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -782,6 +817,14 @@ video {
 
 .to-sky-700 {
   --tw-gradient-to: #0369a1 var(--tw-gradient-to-position);
+}
+
+.to-orange-200 {
+  --tw-gradient-to: #fed7aa var(--tw-gradient-to-position);
+}
+
+.to-orange-300 {
+  --tw-gradient-to: #fdba74 var(--tw-gradient-to-position);
 }
 
 .p-40 {
@@ -1002,6 +1045,26 @@ video {
 .text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-400 {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity, 1));
 }
 
 .hover\:cursor-pointer:hover {
